@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _1RockPaperScissors
 {
-    class game
+    class Game
     {
 
         
@@ -38,7 +38,7 @@ namespace _1RockPaperScissors
                 Console.WriteLine("Examples are: rp, rs, pr, ps, sr, sp, rr, pp, ss");
                 Console.WriteLine("Those are the only acceptable entrys. [ENTER]");
                 Console.ReadLine();
-                rps gameEntery = new rps();
+                RPS gameEntery = new RPS();
                 Console.WriteLine("{0} first, then {1} second", this.playerOne, this.playerTwo);
                 gameEntery.rockPaperScissors();
 

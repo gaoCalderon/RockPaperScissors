@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _1RockPaperScissors
+namespace RockPaperScissors
 {
     class RPS
     {
-      
+
         public void rockPaperScissors()
         {
             bool continuePlay = true;
-            while(continuePlay)
+            while (continuePlay)
             {
                 Console.WriteLine("Rock, Paper, Scissors");
                 Console.WriteLine("Please Type in Entry");
@@ -68,14 +68,11 @@ namespace _1RockPaperScissors
                     continuePlay = true;
                 }
 
-                
+
 
             }
-            
+
 
         }
-        
-        
-
     }
 }
