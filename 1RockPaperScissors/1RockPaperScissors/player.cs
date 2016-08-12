@@ -32,7 +32,10 @@ namespace _1RockPaperScissors
         {
             return this.score;
         }
-
+        public void addOne()
+        {
+            this.score += 1;
+        }
 
     }
 

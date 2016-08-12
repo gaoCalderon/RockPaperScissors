@@ -7,43 +7,44 @@ using System.Threading.Tasks;
 namespace _1RockPaperScissors
 {
     class Option
-    {
+    { 
+    
         public void rockPaperScissors()
         {
             Console.WriteLine("Rock, Paper, Scissors");
             Console.WriteLine("Please Type in an Entry");
             Game game = new Game();
-            Points points = new Points();
+            Player person = new Player();
             string userchoice = Console.ReadLine();
             if (userchoice == "rs")
             {
                 Console.WriteLine("Rock vs Scissors: Rock WINS, {0} gets 1 point", game.gamerTwo);
-                points.addOne + ();
+                game.PlayTwoGetScore();
             }
             else if (userchoice == "sr")
             {
                 Console.WriteLine("Scissors vs Rock: Rock WINS, {0} gets 1 point", game.gamerTwo);
-                points.addOne + ();
+                game.PlayTwoGetScore();
             }
             else if (userchoice == "rp")
             {
                 Console.WriteLine("Rock vs Paper: Paper WINS, {0} gets 1 point", game.gamerOne);
-                points.addOne ();
+                game.PlayOneGetScore();
             }
             else if (userchoice == "pr")
             {
                 Console.WriteLine("Paper vs Rock: Paper WINS, {0} gets 1 point", game.gamerOne);
-                points.addOne();
+                game.PlayOneGetScore();
             }
             else if (userchoice == "sp")
             {
                 Console.WriteLine("Scissor vs Paper: Scissor WINS, {0} gets 1 point", game.gamerOne);
-                points.addOne ();
+                game.PlayOneGetScore();
             }
             else if (userchoice == "ps")
             {
                 Console.WriteLine("Paper vs Scissors: Scissors WINS, {0} gets 1 point", game.gamerTwo);
-                points.addOne ();
+                game.PlayTwoGetScore();
             }
             else if (userchoice == "rr")
             {
