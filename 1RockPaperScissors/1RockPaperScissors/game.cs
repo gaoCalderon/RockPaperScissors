@@ -11,25 +11,29 @@ namespace _1RockPaperScissors
 
         
         
-        string playerOne;
-        string playerTwo;
         
-       public void character(string playerOne, string playerTwo)
+        int round;
+        int numberOfRounds;
+        
+       public void character(int round, int numberOfRounds)
         {
-            this.playerOne = playerOne;
-            this.playerTwo = playerTwo;
+            
+            this.round = 1;
+            this.numberOfRounds = 3;
+            
         }
         
+                   
 
        public void run()
         {
-            
+                Points point = new Points();
                 Console.WriteLine("Weclome to Rock, Paper, Scissors");
                 Console.WriteLine("Please create user 1:");
-                this.playerOne = Console.ReadLine();
+                point.playerOne = Console.ReadLine();
                 Console.WriteLine("Create user two:");
-                this.playerTwo = Console.ReadLine();
-                Console.WriteLine("Welcome {0} & {1} [ENTER]", this.playerOne, this.playerTwo);
+                point.playerOne = Console.ReadLine();
+                Console.WriteLine("Welcome {0} & {1} [ENTER]", point.playerOne, point.playerTwo);
                 Console.ReadLine();
                 Console.WriteLine("GAME INSTRUCTIONS are:");
                 Console.WriteLine("(r)Rock, (p)Paper, (s)Scissors");
@@ -39,42 +43,16 @@ namespace _1RockPaperScissors
                 Console.WriteLine("Those are the only acceptable entrys. [ENTER]");
                 Console.ReadLine();
                 RPS gameEntery = new RPS();
-                Console.WriteLine("{0} first, then {1} second", this.playerOne, this.playerTwo);
+                Console.WriteLine("{0} first, then {1} second", point.playerOne, point.playerTwo);
                 gameEntery.rockPaperScissors();
 
-            Console.WriteLine("Round 2");
-            Console.WriteLine("Do you want to continue playing? Type: Yes/No");
-
-       
-                string options = Console.ReadLine();
-                if (options == "yes")
-                {
-                    Console.WriteLine();
-                    gameEntery.rockPaperScissors();
-                 }
-                
-                else if (options == "no")
-                {
-                Console.WriteLine("Goodbye!");
-                }
-
-            Console.WriteLine("Round 3");
-            Console.WriteLine("Do you want to continue playing? Type: Yes/No");
-
-
-            string option = Console.ReadLine();
-            if (option == "yes")
-            {
-                Console.WriteLine();
-                gameEntery.rockPaperScissors();
+            
             }
 
-            else if (option == "no")
-            {
-                Console.WriteLine("Goodbye!");
-            }
+        
 
         }
-        
+
+
     }
 }
