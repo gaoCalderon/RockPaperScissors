@@ -18,34 +18,23 @@ namespace _1RockPaperScissors
         int rs;
         int sr;
 
-        public void points()
+        public int pointScores()
         {
             this.ss = 0;
             this.pp = 0;
             this.rr = 0;
-            this.rp = 1;
-            this.pr = 1;
-            this.ps = 1;
-            this.sp = 1;
-            this.rs = 1;
-            this.sr = 1;
+            this.rp = 0;
+            this.pr = 0;
+            this.ps = 0;
+            this.sp = 0;
+            this.rs = 0;
+            this.sr = 0;
         }
 
-        public void playerOne()
-        {
-            this.pr += 1;
-            this.sp += 1;
-            this.rs += 1;
-        }
-
-        public void playerTwo()
+        public void addOne()
         {
             this.rp += 1;
-            this.ps += 1;
-            this.sr += 1;
         }
-
-        
 
     }
 }

@@ -9,24 +9,30 @@ namespace _1RockPaperScissors
     class Game
     {
 
-        public string gamerOne;
-       public  string gamerTwo;
-
-        public void character(string gamerOne, string gamerTwo)
-        {
-            this.gamerOne = gamerOne;
-            this.gamerTwo = gamerTwo;
+        public Player gamerOne;
+        public Player gamerTwo;
         }
+
+        public Player createPlayer()
+    {
+        Player gamePlayer = new Player();
+        gamePlayer.SetName();
+        return gamePlayer;
+    }
+
+
+
 
         public void run()
         {
             Points point = new Points();
+            Player person = new Player();
             Console.WriteLine("Weclome to Rock, Paper, Scissors");
-            Console.WriteLine("Please create user 1:");
-            this.gamerOne = Console.ReadLine();
-            Console.WriteLine("Create user two:");
-            this.gamerTwo = Console.ReadLine();
-            Console.WriteLine("Welcome {0} & {1} [ENTER]", this.gamerOne, this.gamerTwo);
+            Console.WriteLine("1st Player");
+            createPlayer.gamerOne();
+            Console.WriteLine("2nd Player");
+            createPlayer.gamerTwo();
+            Console.WriteLine("Welcome {0} & {1} [ENTER]", gamerOne.GetName, gamerTwo.GetName);
             Console.ReadLine();
             Console.WriteLine("GAME INSTRUCTIONS are:");
             Console.WriteLine("(r)Rock, (p)Paper, (s)Scissors");

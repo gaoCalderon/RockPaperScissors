@@ -11,39 +11,39 @@ namespace _1RockPaperScissors
         public void rockPaperScissors()
         {
             Console.WriteLine("Rock, Paper, Scissors");
-            Console.WriteLine("Please Type in Entry");
+            Console.WriteLine("Please Type in an Entry");
             Game game = new Game();
             Points points = new Points();
             string userchoice = Console.ReadLine();
             if (userchoice == "rs")
             {
-                Console.WriteLine("Rock vs Scissors: Rock WINS, {0} gets {1} point", game.gamerTwo, );
-                points.playerTwo();
+                Console.WriteLine("Rock vs Scissors: Rock WINS, {0} gets 1 point", game.gamerTwo);
+                points.addOne + ();
             }
             else if (userchoice == "sr")
             {
-                Console.WriteLine("Scissors vs Rock: Rock WINS, {0} gets {1}", this.gamerTwo, points.playerTwo);
-                points.playerTwo();
+                Console.WriteLine("Scissors vs Rock: Rock WINS, {0} gets 1 point", game.gamerTwo);
+                points.addOne + ();
             }
             else if (userchoice == "rp")
             {
-                Console.WriteLine("Rock vs Paper: Paper WINS, {0} gets {1}", this.gamerOne, points.playerOne);
-                points.playerOne();
+                Console.WriteLine("Rock vs Paper: Paper WINS, {0} gets 1 point", game.gamerOne);
+                points.addOne ();
             }
             else if (userchoice == "pr")
             {
-                Console.WriteLine("Paper vs Rock: Paper WINS, {0} gets {1}", this.gamerOne, points.playerOne);
-                points.playerOne();
+                Console.WriteLine("Paper vs Rock: Paper WINS, {0} gets 1 point", game.gamerOne);
+                points.addOne();
             }
             else if (userchoice == "sp")
             {
-                Console.WriteLine("Scissor vs Paper: Scissor WINS, {0} gets {1}", this.gamerOne, points.playerOne);
-                points.playerOne();
+                Console.WriteLine("Scissor vs Paper: Scissor WINS, {0} gets 1 point", game.gamerOne);
+                points.addOne ();
             }
             else if (userchoice == "ps")
             {
-                Console.WriteLine("Paper vs Scissors: Scissors WINS, {0} gets {1}", this.gamerTwo, points.playerTwo);
-                points.playerTwo();
+                Console.WriteLine("Paper vs Scissors: Scissors WINS, {0} gets 1 point", game.gamerTwo);
+                points.addOne ();
             }
             else if (userchoice == "rr")
             {
