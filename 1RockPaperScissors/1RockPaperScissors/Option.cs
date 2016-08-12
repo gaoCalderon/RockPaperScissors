@@ -14,37 +14,36 @@ namespace _1RockPaperScissors
             Console.WriteLine("Rock, Paper, Scissors");
             Console.WriteLine("Please Type in an Entry");
             Game game = new Game();
-            Player person = new Player();
             string userchoice = Console.ReadLine();
             if (userchoice == "rs")
             {
                 Console.WriteLine("Rock vs Scissors: Rock WINS, {0} gets 1 point", game.gamerTwo);
-                game.PlayTwoGetScore();
+                game.gamerOne.GetPlayerScore();
             }
             else if (userchoice == "sr")
             {
                 Console.WriteLine("Scissors vs Rock: Rock WINS, {0} gets 1 point", game.gamerTwo);
-                game.PlayTwoGetScore();
+                game.gamerTwo.GetPlayerScore();
             }
             else if (userchoice == "rp")
             {
                 Console.WriteLine("Rock vs Paper: Paper WINS, {0} gets 1 point", game.gamerOne);
-                game.PlayOneGetScore();
+                game.gamerOne.GetPlayerScore();
             }
             else if (userchoice == "pr")
             {
                 Console.WriteLine("Paper vs Rock: Paper WINS, {0} gets 1 point", game.gamerOne);
-                game.PlayOneGetScore();
+                game.gamerOne.GetPlayerScore();
             }
             else if (userchoice == "sp")
             {
                 Console.WriteLine("Scissor vs Paper: Scissor WINS, {0} gets 1 point", game.gamerOne);
-                game.PlayOneGetScore();
+                game.gamerOne.GetPlayerScore();
             }
             else if (userchoice == "ps")
             {
                 Console.WriteLine("Paper vs Scissors: Scissors WINS, {0} gets 1 point", game.gamerTwo);
-                game.PlayTwoGetScore();
+                game.gamerTwo.GetPlayerScore();
             }
             else if (userchoice == "rr")
             {

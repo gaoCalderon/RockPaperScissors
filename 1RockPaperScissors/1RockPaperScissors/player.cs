@@ -11,15 +11,15 @@ namespace _1RockPaperScissors
         protected string name;
         protected int score;
 
-        public Player(string name)
+        public Player(string Name)
         {
-            this.name = name;
+            this.name = Name;
             this.score = 0;
         }
 
         public void SetName()
         {
-            Console.WriteLine("Please enter name:");
+            Console.WriteLine("Pleas enter in a Player name [ENTER]");
             this.name = Console.ReadLine();
         }
 
@@ -30,6 +30,7 @@ namespace _1RockPaperScissors
 
         public int GetPlayerScore()
         {
+            Console.WriteLine("{0} has {1} total points", name, score);
             return this.score;
         }
         public void addOne()
