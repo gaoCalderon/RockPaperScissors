@@ -31,19 +31,21 @@ namespace _1RockPaperScissors
             this.sr = 1;
         }
 
-        public string playerOne()
+        public void playerOne()
         {
             this.pr += 1;
             this.sp += 1;
             this.rs += 1;
         }
 
-        public string playerTwo()
+        public void playerTwo()
         {
             this.rp += 1;
             this.ps += 1;
             this.sr += 1;
         }
+
+        
 
     }
 }

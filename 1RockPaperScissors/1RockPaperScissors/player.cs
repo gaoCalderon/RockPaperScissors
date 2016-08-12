@@ -8,11 +8,5 @@ namespace _1RockPaperScissors
 {
     class Player
     {
-        string name;
-
-        public Player(string name)
-        {
-            this.name = name;
-        }
     }
 }
