@@ -9,58 +9,47 @@ namespace RockPaperScissors
     class RPS
     {
 
+        char r;
+        char p;
+        char s;
+
+        public void meaning(char rock, char paper, char scissors)
+        {
+            r = rock;
+            p = paper;
+            s = scissors;
+        }
+
+        public void score()
+        {
+
+        }
+          
+
         public void rockPaperScissors()
         {
             bool continuePlay = true;
             while (continuePlay)
             {
+                Game game = new Game();
                 Console.WriteLine("Rock, Paper, Scissors");
+
                 Console.WriteLine("Please Type in Entry");
                 string userchoice = Console.ReadLine();
-                if (userchoice == "rs")
+                if (userchoice == "r")
                 {
-                    Console.WriteLine("Rock vs Scissors: Rock WINS");
+                    Console.WriteLine();
                     continuePlay = false;
                 }
-                else if (userchoice == "sr")
+                else if (userchoice == "s")
                 {
-                    Console.WriteLine("Scissors vs Rock: Rock WINS");
+                    Console.WriteLine();
                     continuePlay = false;
                 }
-                else if (userchoice == "rp")
+                else if (userchoice == "p")
                 {
-                    Console.WriteLine("Rock vs Paper: Paper WINS");
+                    Console.WriteLine();
                     continuePlay = false;
-                }
-                else if (userchoice == "pr")
-                {
-                    Console.WriteLine("Paper vs Rock: Paper WINS");
-                    continuePlay = false;
-                }
-                else if (userchoice == "sp")
-                {
-                    Console.WriteLine("Scissor vs Paper: Scissor WINS");
-                    continuePlay = false;
-                }
-                else if (userchoice == "ps")
-                {
-                    Console.WriteLine("Paper vs Scissors: Scissors WINS");
-                    continuePlay = false;
-                }
-                else if (userchoice == "rr")
-                {
-                    Console.WriteLine("Rock vs Rock: -TIE GAME- REMATCH");
-                    continuePlay = true;
-                }
-                else if (userchoice == "pp")
-                {
-                    Console.WriteLine("Paper vs Paper: -TIE GAME- REMATCH");
-                    continuePlay = true;
-                }
-                else if (userchoice == "ss")
-                {
-                    Console.WriteLine("Scissors vs Scissors: -TIE GAME- REMATCH");
-                    continuePlay = true;
                 }
                 else
                 {

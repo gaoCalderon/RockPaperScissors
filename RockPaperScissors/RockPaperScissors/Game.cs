@@ -18,6 +18,9 @@ namespace RockPaperScissors
             this.playerTwo = playerTwo;
         }
 
+        
+          
+
 
         public void run()
         {
@@ -30,15 +33,14 @@ namespace RockPaperScissors
             Console.WriteLine("Welcome {0} & {1} [ENTER]", this.playerOne, this.playerTwo);
             Console.ReadLine();
             Console.WriteLine("GAME INSTRUCTIONS are:");
-            Console.WriteLine("(r)Rock, (p)Paper, (s)Scissors");
-            Console.WriteLine("both enteries must be submitted at one time [ENTER]");
-            Console.ReadLine();
-            Console.WriteLine("Examples are: rp, rs, pr, ps, sr, sp, rr, pp, ss");
-            Console.WriteLine("Those are the only acceptable entrys. [ENTER]");
+            Console.WriteLine("(r)Rock, (p)Paper, (s)Scissors [ENTER]");
             Console.ReadLine();
             RPS gameEntery = new RPS();
-            Console.WriteLine("{0} first, then {1} second", this.playerOne, this.playerTwo);
+            Console.WriteLine("{0} first,", this.playerOne);
             gameEntery.rockPaperScissors();
+            Console.WriteLine("{0} first,", this.playerTwo);
+            gameEntery.rockPaperScissors();
+            //gameEntery.score = Console.ReadLine() 
 
             Console.WriteLine("Round 2");
             Console.WriteLine("Do you want to continue playing? Type: Yes/No");
