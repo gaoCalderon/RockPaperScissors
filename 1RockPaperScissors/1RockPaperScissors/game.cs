@@ -37,7 +37,6 @@ namespace _1RockPaperScissors
             Console.WriteLine("Those are the only acceptable entrys. [ENTER]");
             Console.ReadLine();
             Console.WriteLine("{0} first, then {1} second", gamerOne.GetName(), gamerTwo.GetName());
-            Repeat repeatGame = new Repeat();
             Option enterGame = new Option();
             repeatTheGame();
         }
